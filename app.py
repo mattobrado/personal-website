@@ -11,3 +11,8 @@ def homepage():
 def resume():
     """ Resume page """
     return render_template("resume.html")
+
+@app.route("/portfolio")
+def portfolio():
+    """ Portfolio page """
+    return render_template("portfolio.html")
