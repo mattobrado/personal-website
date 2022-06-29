@@ -5,7 +5,12 @@ app = Flask(__name__)
 @app.route("/")
 def homepage():
     """ Main landing page """
-    return render_template("homepage.html")
+    return render_template("about.html")
+
+@app.route("/about")
+def about():
+    """ about page """
+    return render_template("about.html")
 
 @app.route("/resume")
 def resume():
