@@ -1,0 +1,10 @@
+.cover-image {
+  position: relative;
+}
+
+.cover-text {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
