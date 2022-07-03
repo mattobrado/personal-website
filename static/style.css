@@ -30,3 +30,11 @@
       display: none;
     }
   }
+
+  .container {
+    padding-top: 10px;
+  }
+
+  .resume {
+    padding-bottom: 25px;
+  }
