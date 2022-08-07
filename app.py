@@ -1,11 +1,13 @@
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
+bootsrap =Bootstrap5(app) # Create bootstrap object
 
 @app.route("/")
 def homepage():
     """ Main landing page """
-    return render_template("cover.html")
+    return render_template("about.html")
 
 @app.route("/about")
 def about():
