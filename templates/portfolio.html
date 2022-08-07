@@ -1,5 +1,41 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Portfolio</h1>
-<p>This is the portfolio page</p>
+<section class="resume">
+  <div class="container">
+    <div class="section-title">
+      <h1>Portfolio</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+      <div class="col">
+        <div class="card h-100 resume-item">
+          <img src="/static/TwilioandSpotify.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="https://spotify-text-message-playlists.herokuapp.com/demo/"><h4>Spotify text message Playlists</h4></a>
+            <a href="https://github.com/mattobrado/spotify-text-message-playlists"><em>Source Code</em></a>
+            <ul>
+              <li>Created website using Flask, WTForms, Twilio, and the Spotify API that enables users to create Spotify playlists that can have songs added to them by sending text messages to a group chat</li>
+              <li>Stored user, playlist and, song information in a PostgreSQL database using SQLAlchemy</li>
+              <li>Wrote unit tests for all endpoints using Python unittest</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 resume-item">
+          <img src="/static/connect-4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="https://spotify-text-message-playlists.herokuapp.com/demo/"><h4>JavaScript Connect 4</h4></a>
+            <a href="https://github.com/mattobrado/personal-website"><em>Source Code</em></a>
+            <ul>
+              <li>Increased efficiency of bulldozers' cooling fans by 14% by creating a thermodynamic model in Matlab and leveraging it to design and tune a feedback controller, reducing emissions and increasing pushing power</li>
+              <li>Improved modularity and maintainability of bulldozers' transmission software by refactoring components into a modern architecture while ensuring all unit tests were re-written and passing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

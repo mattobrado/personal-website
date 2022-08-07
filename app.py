@@ -24,7 +24,7 @@ def portfolio():
     """ Portfolio page """
     return render_template("portfolio.html")
 
-@app.route("/contact")
-def contact():
+@app.route("/connect4")
+def connect4():
     """ contact page """
-    return render_template("contact.html")
+    return render_template("connect4.html")
