@@ -1,14 +1,3 @@
-.cover-image {
-  position: relative;
-}
-
-.cover-text {
-  position: absolute;
-  top: 3%;
-  left: 0;
-  width: 100%;
-}
-
 .card-img-top {
   width: 100%;
   height: 30vh;

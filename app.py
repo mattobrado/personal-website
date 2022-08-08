@@ -9,11 +9,6 @@ def homepage():
     """ Main landing page """
     return render_template("about.html")
 
-@app.route("/about")
-def about():
-    """ about page """
-    return render_template("about.html")
-
 @app.route("/resume")
 def resume():
     """ Resume page """
@@ -24,7 +19,7 @@ def portfolio():
     """ Portfolio page """
     return render_template("portfolio.html")
 
-@app.route("/connect4")
-def connect4():
+@app.route("/jeopardy")
+def jeopardy():
     """ contact page """
-    return render_template("connect4.html")
+    return render_template("jeopardy.html")

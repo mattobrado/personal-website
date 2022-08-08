@@ -1,22 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
+  <div class="row d-block d-lg-none mb-4 text-center">
+    <img class="rounded-circle" alt="" src="/static/profile-picture.jpeg" style="height: 200px; width: 200px">
+  </div>
   <h1>About</h1>
-  <p>
-    In my 2 years in software development, I have experienced the challenges of working at a startup and collaborated with large teams at a 70,000-employee enterprise.
-  </p>
-  <p>
-    Currently, I work on John Deere's automated steering team, where I take pride in for writing clean, well-documented code, clearly communicating with collaborators around the world, and asking lots of questions.
-  </p>
-  <p>
-    Previously, I built advanced prosthetic hands at Psyonic, I developed autonomous vehicle simulations at Illinois' AUVSL, and I promoted diversity & inclusion in STEM as vice president of the Illinois State Physics Club.
-  </p>
-  <p>
-    I take pride in my work and I want to maximize my social impact through my career. I'm especially interested improving the live of farm animals, preventing pandemics, dismantling nuclear weapons, and promoting economic growth the world's poorest countries.
-  </p>
-  <p>
-    If you have a project I can help with, please get in touch.
-  </p>
+  <div class="row ">
+    <div class="col">
+      <p>In my 2 years in software development, I have experienced the challenges of working at a startup and collaborated with large teams at a 70,000-employee enterprise.</p>
+      <p>Currently, I work on John Deere's automated steering team, where I take pride in for writing clean, well-documented code, clearly communicating with collaborators around the world, and asking lots of questions.</p>
+      <p>Previously, I built advanced prosthetic hands at Psyonic, I developed autonomous vehicle simulations at Illinois' AUVSL, and I promoted diversity & inclusion in STEM as vice president of the Illinois State Physics Club.</p>
+      <p>I take pride in my work and I want to maximize my social impact through my career. I'm especially interested improving the live of farm animals, preventing pandemics, dismantling nuclear weapons, and promoting economic growth the world's poorest countries.</p>
+      <p>If you have a project I can help with, please get in touch.</p>
+    </div>
+    <div class="col-4 d-none d-lg-block">
+      <img class="img-fluid rounded-circle w-100" alt="100x100" src="/static/profile-picture.jpeg" data-holder-rendered="true">
+    </div>
+  </div>
+  <a href="/resume">Resume</a>, 
+  <a href="/portfolio">Portfolio</a>
 </div>
-<h1>Contact</h1>
+<div class="container">
+  <div class="row mt-2">
+    <h4>Email:</h4>
+    <p>mcobradovic@gmail.com</p>
+    <h4>Phone:</h4>
+    <p>+1 (708) 420-7758</p>
+    <h4>Address:</h4>
+    <p>15827 Aster Dr, Lockport IL 60441</p>
+  </div>
+</div>
 {% endblock %}
