@@ -5,8 +5,8 @@ const NUM_CATEGORIES = 6; // number of categories
 const NUM_QUESTIONS = 5;  // number of questions per category
 const HIGHEST_CATEGORY_ID = 18430; // as of 06/03/22
 
-const $body = $('#gameContainer'); // jQuery reference to body
-
+const $body = $('#gameContainer'); // jQuery reference to game container
+const $jeopardyContainer= $('#jeopardyContainer'); // jQuery reference to larger jeopary container
 
 //Get NUM_CATEGORIES random category from API.
 function getCategoryIds(numIds, highestId) {
@@ -119,7 +119,7 @@ function handleClick(evt) {
   }
 }
 
-//Start game:
+// Start game
 async function setupAndStart() {
   const categoryIds = getCategoryIds(NUM_CATEGORIES, HIGHEST_CATEGORY_ID); // get category ids
   for (let categoryId of categoryIds) {
@@ -131,10 +131,10 @@ async function setupAndStart() {
   fillTable(categories);
 }
 
-// On click of start / restart button, set up game.
+// On restart button, set up game.
 setupAndStart(); // set up board
 
-const $restartButton = $('<button class="btn btn-outline-danger">Restart</button>'); // make restart button
+const $restartButton = $('<button class="btn btn-outline-danger float-end">Restart</button>'); // make restart button
 
 // click handler for restart button
 $restartButton.on('click', function () {
@@ -148,4 +148,4 @@ $restartButton.on('click', function () {
   }
 });
 
-$body.append($restartButton); // add restart button to page
+$jeopardyContainer.append($restartButton); // add restart button to page
