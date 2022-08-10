@@ -15,7 +15,6 @@
   </title>
 </head>
 <body>
-<!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Matt Obradovic</a>
@@ -51,8 +50,6 @@
     </div>
   </div>
 </nav>
-
-<!-- content -->
 <div class="container">
   {% for category, message in get_flashed_messages(with_categories=True) %}
   <div class="alert alert-{{ category }}">{{ message }}</div>
@@ -61,8 +58,6 @@
     <!-- page content goes here -->
   {% endblock %}
 </div>
-
-<!-- footer -->
 {% block footer %}
 <footer class="mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
   <div class="container border-top text-muted">

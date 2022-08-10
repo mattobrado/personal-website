@@ -21,7 +21,7 @@ function getCategoryIds(numIds, highestId) {
 
 // Return object with data about a category:
 async function getCategory(catId) {
-  const result = await axios.get(`http://jservice.io/api/category?id=${catId}`);
+  const result = await axios.get(`https://jservice.io/api/category?id=${catId}`);
   const { title, clues: allClues } = result.data; // destructure data we want
                                                   // rename clues to allClues
                                                   // because we will return a variable
